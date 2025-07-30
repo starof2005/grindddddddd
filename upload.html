@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Chew Data</title>
+  <!-- Firebase App (core) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+
+<!-- Firebase Firestore -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+    
+  <h2>Upload Chew Data</h2>
+  <input type="number" id="chewInput" placeholder="Enter chews per minute" />
+  <button onclick="uploadData()">Upload</button>
+
+
+  <h2>Uploading Dummy Chew Data...</h2>
+  <script>
+    // Your Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyBLCfnv4Zc5S4zjouhOC8Yx3yq1Sp1XqF8",
+      authDomain: "chew-a7f8e.firebaseapp.com",
+      projectId: "chew-a7f8e",
+      storageBucket: "chew-a7f8e.firebasestorage.app",
+      messagingSenderId: "289328263335",
+      appId: "1:289328263335:web:e46a1705b19d70e8f7ab82",
+      measurementId: "G-L33CTHR129"
+    };
+
+    // Initialize
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    // Dummy chew data
+    const data = [
+      { chews: 32, mood: "Sad" }, { chews: 45, mood: "Sad" }, { chews: 48, mood: "Sad" },
+      { chews: 53, mood: "Normal" }, { chews: 59, mood: "Normal" }, { chews: 61, mood: "Normal" },
+      { chews: 65, mood: "Normal" }, { chews: 68, mood: "Normal" }, { chews: 72, mood: "Normal" },
+      { chews: 76, mood: "Normal" }, { chews: 80, mood: "Normal" }, { chews: 84, mood: "Happy" },
+      { chews: 88, mood: "Happy" }, { chews: 92, mood: "Happy" }, { chews: 95, mood: "Happy" },
+      { chews: 98, mood: "Happy" }, { chews: 102, mood: "Happy" }, { chews: 105, mood: "Happy" },
+      { chews: 110, mood: "Happy" }, { chews: 115, mood: "Happy" }
+    ];
+
+    // Upload to Firestore
+
+    
+  function uploadData() {
+    const chewCount = parseInt(document.getElementById('chewInput').value);
+
+    db.collection("chewData").add({
+      timestamp: new Date(),
+      chewsPerMinute: chewCount
+    }).then(() => {
+      alert("Data uploaded!");
+    }).catch((error) => {
+      console.error("Error adding document: ", error);
+    });
+  }
+
+
+
+    data.forEach(async (entry) => {
+      await db.collection("chewdata").add(entry);
+      console.log("Added:", entry);
+    });
+  </script>
+</body>
+</html>

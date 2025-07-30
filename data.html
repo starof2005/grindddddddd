@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Export Chew Data</title>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h2>Exporting Chew Data...</h2>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBLCfnv4Zc5S4zjouhOC8Yx3yq1Sp1XqF8",
+      authDomain: "chew-a7f8e.firebaseapp.com",
+      projectId: "chew-a7f8e",
+      storageBucket: "chew-a7f8e.appspot.com",
+      messagingSenderId: "289328263335",
+      appId: "1:289328263335:web:e46a1705b19d70e8f7ab82",
+      measurementId: "G-L33CTHR129"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    async function exportData() {
+      const snapshot = await db.collection("chewdata").get();
+      const allData = [];
+
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        allData.push({
+          chews: data.chews || data.chewsPerMinute,
+          mood: data.mood || "Unknown"
+        });
+      });
+
+      console.log("Chew Data:", allData);
+
+      // Optional: Download as file
+      const blob = new Blob([JSON.stringify(allData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'chewdata.json';
+      a.click();
+    }
+
+    exportData();
+  </script>
+</body>
+</html>
