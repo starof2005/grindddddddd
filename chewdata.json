@@ -1,0 +1,206 @@
+[
+  {
+    "chews": 65,
+    "mood": "Normal"
+  },
+  {
+    "chews": 76,
+    "mood": "Normal"
+  },
+  {
+    "chews": 110,
+    "mood": "Happy"
+  },
+  {
+    "chews": 105,
+    "mood": "Happy"
+  },
+  {
+    "chews": 98,
+    "mood": "Happy"
+  },
+  {
+    "chews": 88,
+    "mood": "Happy"
+  },
+  {
+    "chews": 45,
+    "mood": "Sad"
+  },
+  {
+    "chews": 61,
+    "mood": "Normal"
+  },
+  {
+    "chews": 105,
+    "mood": "Happy"
+  },
+  {
+    "chews": 95,
+    "mood": "Happy"
+  },
+  {
+    "chews": 98,
+    "mood": "Happy"
+  },
+  {
+    "chews": 88,
+    "mood": "Happy"
+  },
+  {
+    "chews": 110,
+    "mood": "Happy"
+  },
+  {
+    "chews": 95,
+    "mood": "Happy"
+  },
+  {
+    "chews": 72,
+    "mood": "Normal"
+  },
+  {
+    "chews": 53,
+    "mood": "Normal"
+  },
+  {
+    "chews": 45,
+    "mood": "Sad"
+  },
+  {
+    "chews": 32,
+    "mood": "Sad"
+  },
+  {
+    "chews": 102,
+    "mood": "Happy"
+  },
+  {
+    "chews": 115,
+    "mood": "Happy"
+  },
+  {
+    "chews": 115,
+    "mood": "Happy"
+  },
+  {
+    "chews": 53,
+    "mood": "Normal"
+  },
+  {
+    "chews": 59,
+    "mood": "Normal"
+  },
+  {
+    "chews": 72,
+    "mood": "Normal"
+  },
+  {
+    "chews": 61,
+    "mood": "Normal"
+  },
+  {
+    "chews": 92,
+    "mood": "Happy"
+  },
+  {
+    "chews": 80,
+    "mood": "Normal"
+  },
+  {
+    "chews": 48,
+    "mood": "Sad"
+  },
+  {
+    "chews": 48,
+    "mood": "Sad"
+  },
+  {
+    "chews": 102,
+    "mood": "Happy"
+  },
+  {
+    "chews": 59,
+    "mood": "Normal"
+  },
+  {
+    "chews": 53,
+    "mood": "Normal"
+  },
+  {
+    "chews": 68,
+    "mood": "Normal"
+  },
+  {
+    "chews": 76,
+    "mood": "Normal"
+  },
+  {
+    "chews": 76,
+    "mood": "Normal"
+  },
+  {
+    "chews": 32,
+    "mood": "Sad"
+  },
+  {
+    "chews": 84,
+    "mood": "Happy"
+  },
+  {
+    "chews": 61,
+    "mood": "Normal"
+  },
+  {
+    "chews": 65,
+    "mood": "Normal"
+  },
+  {
+    "chews": 65,
+    "mood": "Normal"
+  },
+  {
+    "chews": 59,
+    "mood": "Normal"
+  },
+  {
+    "chews": 84,
+    "mood": "Happy"
+  },
+  {
+    "chews": 32,
+    "mood": "Sad"
+  },
+  {
+    "chews": 45,
+    "mood": "Sad"
+  },
+  {
+    "chews": 105,
+    "mood": "Happy"
+  },
+  {
+    "chews": 72,
+    "mood": "Normal"
+  },
+  {
+    "chews": 92,
+    "mood": "Happy"
+  },
+  {
+    "chews": 68,
+    "mood": "Normal"
+  },
+  {
+    "chews": 80,
+    "mood": "Normal"
+  },
+  {
+    "chews": 68,
+    "mood": "Normal"
+  },
+  {
+    "chews": 98,
+    "mood": "Happy"
+  }
+]
